@@ -1,0 +1,16 @@
+{
+  "coc.source.syntax.enable": true,
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.enableFloatHighlight": true,
+  "javascript.suggestionActions.enabled": false,
+  "javascript.validate.enable": false,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  }
+}
