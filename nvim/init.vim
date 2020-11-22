@@ -18,7 +18,7 @@ set laststatus=2
 set shiftwidth=2                            " width for autoindents
 set tabstop=2                               " number of columns occupied by a tab character
 set mouse=v                                 " middle-click paste with mouse
-set cc=120                                  " set an 80 column border for good coding style
+set cc=120                                  " set an 120 column border for good coding style
 
 filetype off
 
