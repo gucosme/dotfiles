@@ -10,7 +10,7 @@ set hlsearch                                " highlight search results
 set number                                  " add line numbers
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip    " ctrlp ignore dirs and files
 set wildmode=longest,list                   " get bash-like tab completions
-set background=light                         " set colorscheme to dark variant
+set background=light                        " set colorscheme to dark variant
 set updatetime=250
 set softtabstop=4                           " see multiple spaces as tabstops so <BS> does the right thing
 set encoding=utf8                           " set file encoding to utf8
@@ -18,7 +18,7 @@ set laststatus=2
 set shiftwidth=2                            " width for autoindents
 set tabstop=2                               " number of columns occupied by a tab character
 set mouse=v                                 " middle-click paste with mouse
-set cc=80                                   " set an 80 column border for good coding style
+set cc=120                                  " set an 80 column border for good coding style
 
 filetype off
 
@@ -176,9 +176,11 @@ inoremap <silent><expr> <c-space> coc#refresh()
 let g:ale_sign_error = ' •'
 let g:ale_sign_warning = ' ‣'
 let g:ale_fix_on_save = 1
+let g:ale_sign_column_always = 1
 let g:ale_completion_enabled = 0
 let g:airline#extensions#ale#enabled = 1
 let g:ale_elixir_elixir_ls_release = '/home/gustavo/projetos/elixir/elixir-ls/rel'
+let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
 
 " ctrlp
 let g:ctrlp_custom_ignore = '\v[\/](node_modules)|(\.git)|(_build)|(deps)|(vendor)$'
